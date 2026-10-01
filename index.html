@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Österreich-Simulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--APP-->
+<header class="top">
+  <div class="brand">
+    <div class="flag" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div>
+      <h1>Österreich-Simulator</h1>
+      <div id="chancellor" class="small"></div>
+    </div>
+  </div>
+  <div class="top-right">
+    <div class="when"><span id="date" class="date"></span><span id="next-election" class="small muted"></span></div>
+    <button id="end-month" class="btn btn-primary">Monat beenden</button>
+    <button id="new-game" class="btn-ghost">Neues Spiel</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="kpis" class="kpis" aria-label="Kennzahlen"></section>
+  <div class="layout">
+    <aside class="side">
+      <section class="block map-block">
+        <div class="block-head"><h3>Bundesländer</h3><span class="muted small">Farbe = Umfrage-Erster</span></div>
+        <div id="map" class="map"></div>
+      </section>
+      <section id="state-detail" class="block"></section>
+    </aside>
+    <div class="main">
+      <nav id="tabs" class="tabs" role="tablist"></nav>
+      <div id="panel" class="panel" role="tabpanel"></div>
+    </div>
+  </div>
+  <footer class="foot small muted">Einwohnerzahlen: Statistik Austria, 1.1.2025. Ausgangsumfragen angelehnt an die Nationalratswahl 2024. Alle Spielereignisse sind fiktiv.</footer>
+</main>
+
+<div id="modal" class="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" id="modal-body"></div>
+</div>
+<!--/APP-->
+<script src="js/data.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
