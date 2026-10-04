@@ -29,3 +29,18 @@ Ein Politik-Strategiespiel im Browser, inspiriert vom „Republik Simulator“. 
 | `js/game.js` | Spiellogik und Oberfläche |
 
 Neue Gesetze oder Ereignisse lassen sich direkt in `js/data.js` ergänzen.
+
+---
+
+# Apokalypse
+
+Ein Überlebensspiel im Browser, inspiriert von „The Walking Dead“. Zehn Überlebende unter ihrem Anführer Tobi lassen sich nieder und bauen eine Siedlung auf, während draußen die Toten umgehen.
+
+**Spielen:** `apokalypse/index.html` im Browser öffnen.
+
+- Drei Startorte: Bauernhof, Gefängnis oder Einkaufszentrum
+- Jeden Tag die Arbeit einteilen: Plündern, Holz, Wasser, Garten, Jagen, Bauen, Werkstatt, Wache, Pflege, Ausruhen
+- Mauer in vier Stufen ausbauen, dazu zehn Gebäude von Wachturm bis Funkstation
+- Werkstatt: Waffen, Fallen, Munition, Medizin, Wasserfilter
+- Nächtliche Angriffe, alle 10 Tage eine Herde, Bisse mit Amputations-Entscheidung, die Plünderer-Bande „Die Erlöser“
+- Ziel: 60 Tage überleben. Stirbt Tobi, ist das Spiel verloren.
